@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estilizada</title>
+    <style>
+        table {
+            width: 18%;
+            border-collapse: collapse;
+            background-color: #f8f9fa;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color:  #007bff;
+        }
+        tr:nth-child(even) {
+            background-color: #e9ecef;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Quantidade</th>
+        </tr>
+        <tr>
+            <td>Arroz</td>
+            <td>2 kg</td>
+        </tr>
+        <tr>
+            <td>Feijão</td>
+            <td>1 kg</td>
+        </tr>
+        <tr>
+            <td>Leite</td>
+            <td>3 litros</td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td>1 dúzia</td>
+        </tr>
+        <tr>
+            <td>Maças</td>
+            <td>5 unidades</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <p><strong>Explicação dos estilos aplicados:</strong></p>
+    <ul>
+        <li><code>border-collapse: collapse;</code> → Remove espaços entre as bordas das células.</li>
+        <li><code>background-color: #f8f9fa;</code> → Define a cor de fundo da tabela.</li>
+        <li><code>border: 2px solid black;</code> → Adiciona bordas pretas de 2px às células.</li>
+        <li><code>padding: 10px;</code> → Adiciona espaçamento interno às células.</li>
+        <li><code>text-align: left;</code> → Alinha o texto à esquerda dentro das células.</li>
+        <li><code>background-color: #007bff;</code> → Define o fundo azul para os cabeçalhos da tabela.</li>
+        <li><code>color: white;</code> → Define a cor do texto dos cabeçalhos como branco.</li>
+        <li><code>tr:nth-child(even)</code> → Alterna a cor de fundo para linhas pares da tabela.</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhas Abrangentes em uma Tabela</title>
+    <style>
+        table {
+            width: 30%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: rgb(88, 194, 243);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Membros da Equipe</h1>
+    
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Cargo</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Ana Souza</td>
+            <td>Gerente de Projetos</td>
+        </tr>
+        <tr>
+            <td>Analista de Dados</td>
+        </tr>
+        <tr>
+            <td>Supervisor de TI</td>
+        </tr>
+        <tr>
+            <td>Lucas Pereira</td>
+            <td>Desenvolvedor Front-End</td>
+        </tr>
+        <tr>
+            <td>Mariana Lima</td>
+            <td>Designer UX/UI</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h3>O que é o atributo <code>rowspan</code>?</h3>
+    <p>O atributo <code>rowspan</code> permite que uma célula (<code>&lt;td&gt; ocupe várias linhas em uma tabela</code></p>
+    <p>Por exemplo, no caso da Ana Souza, a célula do nome dela usa <code>rowspan="3", fazendo com que seu nome cubra três linhas diferentes, enquanto cada linha mostra um cargo distinto.</code></p>
+</body>
+</html>

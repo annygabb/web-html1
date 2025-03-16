@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estruturada Semanticamente</title>
+    <style>
+        table {
+            width: 30%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        .QT {
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+        tfoot {
+            background-color:antiquewhite;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relatório de Vendas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td class="QT">5</td>
+                <td>R$ 4.000,00</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td class="QT">10</td>
+                <td>R$ 2.500,00</td>
+            </tr>
+            <tr>
+                <td>Fones de ouvido</td>
+                <td class="QT">15</td>
+                <td>R$ 200,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total de Vendas</td>
+                <td>R$ 55.000,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <hr>
+    <p><strong>Explicação das tags:</strong></p>
+    <ul>
+        <li><strong>&lt;thead&gt;</strong>: Define a seção do cabeçalho da tabela, agrupando os títulos das colunas.</li>
+        <li><strong>&lt;tbody&gt;</strong>: Contém os dados principais da tabela, organizados em linhas e colunas.</li>
+        <li><strong>&lt;tfoot&gt;</strong>: Representa o rodapé da tabela, geralmente usado para exibir totais ou resumos.</li>
+    </ul>
+    <p>As tags <strong>&lt;thead&gt;</strong>, <strong>&lt;tbody&gt;</strong> e <strong>&lt;tfoot&gt;</strong> não são obrigatórias, mas são úteis em tabelas maiores. Elas melhoram a acessibilidade, facilitam o estilo via CSS e ajudam na organização e manutenção do código.</p>
+</body>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Vídeo</title>
+    <style>
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vídeo de Jujutsu Kaisen</h1>
+    <h2>Sukuna Vs Mahoraga</h2>
+    <div class="video-container">
+        <video controls width="600">
+            <source src="videos/Sukuna-vs-Mahoraga.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+
+    <hr>
+
+    <p><strong>Explicação:</strong><br>
+    Usamos a tag <code>&lt;video&gt;</code> para adicionar vídeos ao HTML.<br>
+    O atributo <code>controls</code> exibe os controles de play, pause e volume.<br>
+    O atributo <code>src</code> define o caminho do arquivo de vídeo.<br>
+    O elemento <code>&lt;source&gt;</code> permite adicionar diferentes formatos de vídeo para compatibilidade com navegadores.<br>
+    A mensagem dentro da tag <code>&lt;video&gt;</code> aparece se o navegador não suportar vídeos.</p>
+</body>
+
+</html>

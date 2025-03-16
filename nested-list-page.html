@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Atividades Favoritas</title>
+</head>
+<body>
+    <h1>Atividades</h1>
+
+    <p>Aqui estão algumas atividades que gosto de fazer e suas respectivas etapas:</p>
+
+    <ul>
+        <li>Programação
+            <ol>
+                <li>Estudar novas linguagens</li>
+                <li>Praticar resolvendo desafios de código</li>
+                <li>Desenvolver projetos pessoais</li>
+            </ol>
+        </li>
+        <li>Exercícios Físicos
+            <ol>
+                <li>Aquecer antes do treino</li>
+                <li>Executar os exercícios planejados</li>
+                <li>Fazer alongamento pós-treinos</li>
+            </ol>
+        </li> 
+        <li>Leitura
+            <ol>
+                <li>Escolher um livro interessante</li>
+                <li>Definir uma meta de páginas lidas diárias</li>
+                <li>Fazer anotações sobre os aprendizado</li>
+            </ol>
+        </li>   
+    </ul>
+
+    <hr>
+
+    <h2>Explicação sobre a estrutura</h2>
+
+    <p><strong>Por que a <code>&lt;li&gt;</code> ficou aberta até o final da <code>&lt;ol&gt;</code>?</strong></p>
+    <p>No HTML, quando você precisa colocar uma estrutura dentro de um item de lista (<code>&lt;li&gt;</code>), a tag precisa envolver tudo o que pertence a esse item. A <code>&lt;li&gt;</code> de "Programação" não fecha imediatamente porque ela abrange tanto o texto "Programação" quanto a <code>&lt;ol&gt;</code> que vem logo abaixo.</p>
+    <p>Se você fechasse a <code>&lt;li&gt;</code> logo após "Programação", o navegador entenderia que a lista ordenada (<code>&lt;ol&gt;</code>) não faz parte dela.</p>
+    
+    <p><strong>E se a <code>&lt;ol&gt;</code> estivesse abaixo da <code>&lt;li&gt;</code> fechada?</strong></p>
+    <pre>
+        <code>
+        &lt;ul&gt;
+            &lt;li&gt;Programação&lt;/li&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Estudar novas linguagens&lt;/li&gt;
+                &lt;li&gt;Praticar resolvendo desafios de código&lt;/li&gt;
+                &lt;li&gt;Desenvolver projetos pessoais&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/ul&gt;
+        </code>
+    </pre>
+    <p>O navegador não entenderia que essa <code>&lt;ol&gt;</code> pertence ao item "Programação". Em vez disso, ele interpretaria a <code>&lt;ol&gt;</code> como um novo bloco separado, o que bagunçaria a estrutura visual.</p>
+
+    <hr>
+    
+    <h2>Diferença entre <code>&lt;strong&gt;</code> e <code>&lt;b&gt;</code></h2>
+    <p><strong>O <code>&lt;strong&gt;</code> indica importância semântica.</strong> Os motores de busca, como o Google, consideram <code>&lt;strong&gt;</code> como um indicativo de relevância, o que pode melhorar a visibilidade do conteúdo. Além disso, leitores de tela enfatizam essas palavras.</p>
+    <p><strong>O <code>&lt;b&gt;</code> apenas estiliza o texto.</strong> Ele deixa o conteúdo em negrito, mas sem impacto semântico. Seu uso é mais voltado para estética do que significado.</p>
+</body>
+</html>

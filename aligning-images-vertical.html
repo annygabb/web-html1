@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical de Imagens</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jogos Clássicos que Marcaram Época</h1>
+
+    <div class="image-container">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2cfe095e-aa71-4892-9efc-31c34405994b/dg8tt4f-6dc6114d-2704-4c4a-8ea3-4ea7e5be7773.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZmUwOTVlLWFhNzEtNDg5Mi05ZWZjLTMxYzM0NDA1OTk0YlwvZGc4dHQ0Zi02ZGM2MTE0ZC0yNzA0LTRjNGEtOGVhMy00ZWE3ZTViZTc3NzMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TfMm72rqfNI_2KiiEaUmbEUDqo1A4ubWTE9D7SYAPK4"
+            alt="Super Mario Bros de 1985">
+        <img src="https://th.bing.com/th/id/OIP.vGX0QN2EuVujs9OPKsu6kQHaGo?rs=1&pid=ImgDetMain"
+            alt="The Legend of Zelda: A Link to the Past de 1991">
+        <img src="https://1.bp.blogspot.com/-Chsg2c-sQRY/Xw_U-FU55fI/AAAAAAAAELo/5chzbkFEJk0wkmr0Uy2iUyOQLGqkCQA7QCLcBGAsYHQ/s621/steamworkshop_webupload_previewfile_288912696_preview.jpg"
+            alt="Final Fantasy VII de 1997">
+    </div>
+
+    <hr>
+    <p><strong>Explicação:</strong></p>
+    <ul>
+        <li><code>&lt;img&gt;</code>: Exibe imagens na página.</li>
+        <li><code>display: flex;</code>: Utilizado para criar um contêiner flexível.</li>
+        <li><code>flex-direction: column;</code>: Define a disposição dos elementos em coluna (verticalmente).</li>
+        <li><code>align-items: center;</code>: Centraliza as imagens horizontalmente.</li>
+        <li><code>gap: 15px;</code>: Adiciona espaçamento entre as imagens.</li>
+    </ul>
+</body>
+</html>

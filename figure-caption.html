@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras e Legendas</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Obras de Arte</h1>
+
+    <div class="gallery">
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/300px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Mona Lisa">
+            <figcaption><strong>Mona Lisa</strong> - Leonardo da Vinci</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://th.bing.com/th/id/OIP.zCk8Bd0MdLPb74hB5DielgHaFp?rs=1&pid=ImgDetMain" alt="A Noite Estrelada">
+            <figcaption><strong>A Noite Estrelada</strong> - Vincent Van Gogh</figcaption>
+        </figure>
+    </div>
+
+    <hr>
+
+<h2>Explicação das Tags &lt;figure&gt; e &lt;figcaption&gt;</h2>
+<p>
+    A tag <code>&lt;figure&gt;</code> é usada para agrupar elementos de mídia, como imagens, gráficos ou vídeos, junto com suas respectivas legendas. Ela melhora a acessibilidade e a organização do conteúdo na página.
+</p>
+
+<p>
+    Dentro de <code>&lt;figure&gt;</code>, usamos a tag <code>&lt;img&gt;</code> para exibir a imagem e a tag <code>&lt;figcaption&gt;</code> para fornecer uma legenda descritiva. Essa legenda ajuda os usuários a entenderem a imagem, especialmente aqueles que usam leitores de tela.
+</p>
+
+<h3>Exemplo:</h3>
+
+<pre>
+&lt;figure&gt;
+    &lt;img src="exemplo.jpg" alt="Descrição da imagem"&gt;
+    &lt;figcaption&gt;Descrição da imagem&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+
+<p>
+    Esse código garante uma melhor estrutura semântica e facilita a interpretação do conteúdo por mecanismos de busca e tecnologias assistivas.
+</p>
+</body>
+</html>

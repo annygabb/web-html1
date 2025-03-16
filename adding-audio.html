@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Áudios</title>
+    <style>
+        .audio-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 330px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Algumas Músicas Legais</h1>
+    <div class="audio-container">
+        <audio controls>
+            <source src="audios/zoom.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls>
+            <source src="audios/valor.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls>
+            <source src="audios/alegre.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <hr>
+
+    <p><strong>Para Adicionar o Áudio:</strong><br>
+    Usamos a tag <code>&lt;audio&gt;</code> para incluir vários arquivos de áudio.<br><br>
+    
+    O atributo <code>controls</code> exibe os controles para tocar, pausar e ajustar o volume.<br>
+    O atributo <code>src</code> define o caminho do arquivo de áudio.<br>
+    Alternativamente, podemos usar <code>&lt;source&gt;</code> para definir diferentes formatos de áudio e garantir compatibilidade com todos os navegadores.</p>
+</body>
+</html>
